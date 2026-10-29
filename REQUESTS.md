@@ -6,7 +6,7 @@ algorithm with clearly more votes jumps the queue.
 
 ## The queue
 
-- [ ] logistic-regression
+- [x] logistic-regression
 - [ ] random-forest
 - [ ] dbscan
 - [ ] gradient-boosting

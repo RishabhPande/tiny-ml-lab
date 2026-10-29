@@ -39,6 +39,7 @@ python algorithms/kmeans/impl.py
 | 5 | [Decision Tree](algorithms/decision-tree/) | CART-style splits, and how an unlimited tree memorizes noise |
 | 6 | [PCA](algorithms/pca/) | Eigendecomposition, and why it cannot see a circle |
 | 7 | [Tiny Neural Net](algorithms/tiny-nn/) | A numpy MLP that solves XOR, and why scaling matters |
+| 8 | [Logistic Regression](algorithms/logistic-regression/) | Gradient descent on log loss, and why a straight line cannot solve XOR |
 
 ## 📏 The rules
 

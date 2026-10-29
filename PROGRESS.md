@@ -13,6 +13,7 @@ yourself, then peek at `impl.py` if you get stuck.
 - [ ] Day 5: decision-tree
 - [ ] Day 6: pca
 - [ ] Day 7: tiny-nn
+- [ ] Day 8: logistic-regression
 
 ## How to use this file
 
