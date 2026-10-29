@@ -1,4 +1,7 @@
-"""K-nearest neighbors classifier (numpy only)."""
+"""K-Nearest Neighbors
+K-nearest neighbors classifier (numpy only).
+Run: python algorithms/knn/impl.py
+"""
 
 import numpy as np
 

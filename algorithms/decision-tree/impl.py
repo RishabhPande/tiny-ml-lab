@@ -1,4 +1,7 @@
-"""CART-style decision tree with Gini splits (numpy only)."""
+"""Decision Tree
+CART-style decision tree with Gini splits (numpy only).
+Run: python algorithms/decision-tree/impl.py
+"""
 
 import numpy as np
 

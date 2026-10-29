@@ -1,4 +1,7 @@
-"""K-means clustering with Lloyd's algorithm (numpy only)."""
+"""K-Means
+K-means clustering with Lloyd's algorithm (numpy only).
+Run: python algorithms/kmeans/impl.py
+"""
 
 import numpy as np
 

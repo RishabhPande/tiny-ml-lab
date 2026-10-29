@@ -1,4 +1,7 @@
-"""Closed-form least squares linear regression (numpy only)."""
+"""Linear Regression
+Closed-form least squares linear regression (numpy only).
+Run: python algorithms/linear-regression/impl.py
+"""
 
 import numpy as np
 

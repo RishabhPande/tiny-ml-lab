@@ -1,4 +1,7 @@
-"""Principal component analysis via eigendecomposition (numpy only)."""
+"""PCA
+Principal component analysis via eigendecomposition (numpy only).
+Run: python algorithms/pca/impl.py
+"""
 
 import numpy as np
 

@@ -1,4 +1,7 @@
-"""Gaussian naive Bayes classifier (numpy only)."""
+"""Gaussian Naive Bayes
+Gaussian naive Bayes classifier (numpy only).
+Run: python algorithms/naive-bayes/impl.py
+"""
 
 import numpy as np
 

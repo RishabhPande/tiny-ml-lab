@@ -1,4 +1,7 @@
-"""A tiny numpy MLP: tanh hidden layer, sigmoid output (numpy only)."""
+"""Tiny Neural Net
+A tiny numpy MLP: tanh hidden layer, sigmoid output (numpy only).
+Run: python algorithms/tiny-nn/impl.py
+"""
 
 import numpy as np
 

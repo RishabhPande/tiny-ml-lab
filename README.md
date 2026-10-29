@@ -7,16 +7,18 @@
 
 **Fork it, fill the workbooks, check off the days.**
 
-One famous ML algorithm a day. Each one lives in a single file, uses numpy
-only, and runs in under 60 seconds. Every algorithm ships with two things
-that make this repo different: a test that proves it works, and a test that
-breaks it, so you learn exactly where each method fails.
+One famous ML algorithm a day, each in a single file, numpy only, done in under 60 seconds. Every algorithm comes with two tests: one that proves it works, and one that breaks it, so you learn exactly where each method fails.
 
-This repo contains work to do, not just code to read. Every algorithm
-folder has a `workbook.py` with TODO bodies: fork the repo, fill in the
-workbook, run it to check yourself, then peek at `impl.py` if you get stuck.
+This repo is work to do, not just code to read. Every folder has a `workbook.py` with TODO bodies: fill it in, run it to check yourself, then peek at `impl.py` if you get stuck.
 
-## 60-second quickstart
+## 🔁 How it works
+
+```mermaid
+flowchart LR
+    A[Fork] --> B[Fill workbook] --> C[Run self-check] --> D[Check off the day] --> E[Join the Showcase]
+```
+
+## ⚡ 60-second quickstart
 
 ```bash
 git clone https://github.com/RishabhPande/tiny-ml-lab.git
@@ -26,7 +28,7 @@ pytest
 python algorithms/kmeans/impl.py
 ```
 
-## The days
+## 📅 The days
 
 | Day | Algorithm | One-liner |
 | --- | --- | --- |
@@ -38,7 +40,7 @@ python algorithms/kmeans/impl.py
 | 6 | [PCA](algorithms/pca/) | Eigendecomposition, and why it cannot see a circle |
 | 7 | [Tiny Neural Net](algorithms/tiny-nn/) | A numpy MLP that solves XOR, and why scaling matters |
 
-## The rules
+## 📏 The rules
 
 - One file per algorithm (`impl.py`), numpy only, no downloads.
 - Every demo runs in under 60 seconds on synthetic data with a fixed seed.
@@ -47,7 +49,7 @@ python algorithms/kmeans/impl.py
 - Every algorithm has a `workbook.py`: the same API with TODO bodies and a
   standalone self-check. Fill it in yourself before reading `impl.py`.
 
-## How to take part
+## 🙌 How to take part
 
 - Start here: copy [PROGRESS.md](PROGRESS.md) into your fork and check days
   off there as you finish them.
