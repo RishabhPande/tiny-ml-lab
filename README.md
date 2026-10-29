@@ -3,6 +3,7 @@
 [![One algorithm a day](https://img.shields.io/badge/one--algorithm--a--day-yes-brightgreen)](https://github.com/RishabhPande/tiny-ml-lab)
 [![numpy only](https://img.shields.io/badge/numpy--only-yes-blue)](https://github.com/RishabhPande/tiny-ml-lab)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](https://github.com/RishabhPande/tiny-ml-lab)
+[![Tests](https://github.com/RishabhPande/tiny-ml-lab/actions/workflows/tests.yml/badge.svg)](https://github.com/RishabhPande/tiny-ml-lab/actions/workflows/tests.yml)
 
 **Fork it, fill the workbooks, check off the days.**
 
