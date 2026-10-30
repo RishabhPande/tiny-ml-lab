@@ -40,6 +40,7 @@ python algorithms/kmeans/impl.py
 | 6 | [PCA](algorithms/pca/) | Eigendecomposition, and why it cannot see a circle |
 | 7 | [Tiny Neural Net](algorithms/tiny-nn/) | A numpy MLP that solves XOR, and why scaling matters |
 | 8 | [Logistic Regression](algorithms/logistic-regression/) | Gradient descent on log loss, and why a straight line cannot solve XOR |
+| 9 | [Random Forest](algorithms/random-forest/) | Bagged trees with random feature subsets, and how majority vote erases a rare class |
 
 ## 📏 The rules
 

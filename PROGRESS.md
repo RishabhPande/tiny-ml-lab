@@ -14,6 +14,7 @@ yourself, then peek at `impl.py` if you get stuck.
 - [ ] Day 6: pca
 - [ ] Day 7: tiny-nn
 - [ ] Day 8: logistic-regression
+- [ ] Day 9: random-forest
 
 ## How to use this file
 
