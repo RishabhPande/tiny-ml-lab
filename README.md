@@ -41,12 +41,13 @@ python algorithms/kmeans/impl.py
 | 7 | [Tiny Neural Net](algorithms/tiny-nn/) | A numpy MLP that solves XOR, and why scaling matters |
 | 8 | [Logistic Regression](algorithms/logistic-regression/) | Gradient descent on log loss, and why a straight line cannot solve XOR |
 | 9 | [Random Forest](algorithms/random-forest/) | Bagged trees with random feature subsets, and how majority vote erases a rare class |
+| 10 | [DBSCAN](algorithms/dbscan/) | Density clustering, and why one radius cannot handle varying densities |
 
 ## 💥 Where they break
 
 ![Four failure modes: K-Means on rings, PCA on a circle, logistic regression on XOR, least squares with an outlier](docs/failure-modes.png)
 
-*Four of the nine `test_breaks` tests, drawn from this repo's own `impl.py` files on the same synthetic data and seeds. Regenerate with `python docs/make_failure_gallery.py` (needs matplotlib; the algorithms stay numpy only).*
+*Four of the ten `test_breaks` tests, drawn from this repo's own `impl.py` files on the same synthetic data and seeds. Regenerate with `python docs/make_failure_gallery.py` (needs matplotlib; the algorithms stay numpy only).*
 
 ## 📏 The rules
 
