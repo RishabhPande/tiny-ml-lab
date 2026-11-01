@@ -9,7 +9,7 @@ algorithm with clearly more votes jumps the queue.
 - [x] logistic-regression
 - [x] random-forest
 - [x] dbscan
-- [ ] gradient-boosting
+- [x] gradient-boosting
 - [ ] pagerank
 - [ ] svm
 - [ ] gmm

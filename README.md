@@ -42,6 +42,7 @@ python algorithms/kmeans/impl.py
 | 8 | [Logistic Regression](algorithms/logistic-regression/) | Gradient descent on log loss, and why a straight line cannot solve XOR |
 | 9 | [Random Forest](algorithms/random-forest/) | Bagged trees with random feature subsets, and how majority vote erases a rare class |
 | 10 | [DBSCAN](algorithms/dbscan/) | Density clustering, and why one radius cannot handle varying densities |
+| 11 | [Gradient Boosting](algorithms/gradient-boosting/) | Stumps fit to residuals, and why trees cannot extrapolate |
 
 ## 💥 Where they break
 

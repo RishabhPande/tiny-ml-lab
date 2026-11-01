@@ -16,6 +16,7 @@ yourself, then peek at `impl.py` if you get stuck.
 - [ ] Day 8: logistic-regression
 - [ ] Day 9: random-forest
 - [ ] Day 10: dbscan
+- [ ] Day 11: gradient-boosting
 
 ## How to use this file
 
