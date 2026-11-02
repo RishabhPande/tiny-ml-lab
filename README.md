@@ -43,6 +43,7 @@ python algorithms/kmeans/impl.py
 | 9 | [Random Forest](algorithms/random-forest/) | Bagged trees with random feature subsets, and how majority vote erases a rare class |
 | 10 | [DBSCAN](algorithms/dbscan/) | Density clustering, and why one radius cannot handle varying densities |
 | 11 | [Gradient Boosting](algorithms/gradient-boosting/) | Stumps fit to residuals, and why trees cannot extrapolate |
+| 12 | [PageRank](algorithms/pagerank/) | Random-surfer ranking, and why a closed loop traps all the rank |
 
 ## 💥 Where they break
 

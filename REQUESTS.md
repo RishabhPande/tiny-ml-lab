@@ -10,7 +10,7 @@ algorithm with clearly more votes jumps the queue.
 - [x] random-forest
 - [x] dbscan
 - [x] gradient-boosting
-- [ ] pagerank
+- [x] pagerank
 - [ ] svm
 - [ ] gmm
 - [ ] hmm

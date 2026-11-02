@@ -17,6 +17,7 @@ yourself, then peek at `impl.py` if you get stuck.
 - [ ] Day 9: random-forest
 - [ ] Day 10: dbscan
 - [ ] Day 11: gradient-boosting
+- [ ] Day 12: pagerank
 
 ## How to use this file
 
