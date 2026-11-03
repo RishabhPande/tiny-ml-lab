@@ -11,7 +11,7 @@ algorithm with clearly more votes jumps the queue.
 - [x] dbscan
 - [x] gradient-boosting
 - [x] pagerank
-- [ ] svm
+- [x] svm
 - [ ] gmm
 - [ ] hmm
 - [ ] attention

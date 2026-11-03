@@ -18,6 +18,7 @@ yourself, then peek at `impl.py` if you get stuck.
 - [ ] Day 10: dbscan
 - [ ] Day 11: gradient-boosting
 - [ ] Day 12: pagerank
+- [ ] Day 13: svm
 
 ## How to use this file
 
