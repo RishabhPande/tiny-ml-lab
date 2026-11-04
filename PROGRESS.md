@@ -19,6 +19,7 @@ yourself, then peek at `impl.py` if you get stuck.
 - [ ] Day 11: gradient-boosting
 - [ ] Day 12: pagerank
 - [ ] Day 13: svm
+- [ ] Day 14: gmm
 
 ## How to use this file
 

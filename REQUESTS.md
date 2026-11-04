@@ -12,7 +12,7 @@ algorithm with clearly more votes jumps the queue.
 - [x] gradient-boosting
 - [x] pagerank
 - [x] svm
-- [ ] gmm
+- [x] gmm
 - [ ] hmm
 - [ ] attention
 - [ ] lora
