@@ -13,7 +13,7 @@ algorithm with clearly more votes jumps the queue.
 - [x] pagerank
 - [x] svm
 - [x] gmm
-- [ ] hmm
+- [x] hmm
 - [ ] attention
 - [ ] lora
 - [ ] rag-retriever

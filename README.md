@@ -46,6 +46,7 @@ python algorithms/kmeans/impl.py
 | 12 | [PageRank](algorithms/pagerank/) | Random-surfer ranking, and why a closed loop traps all the rank |
 | 13 | [Support Vector Machine](algorithms/svm/) | Maximum-margin linear classifier, and why a straight boundary cannot solve XOR |
 | 14 | [Gaussian Mixture Model](algorithms/gmm/) | Soft clustering by EM, and why overlapping blobs cannot be told apart |
+| 15 | [Hidden Markov Model](algorithms/hmm/) | Baum-Welch and Viterbi decoding, and why identical emissions hide the state |
 
 ## 💥 Where they break
 

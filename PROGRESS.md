@@ -20,6 +20,7 @@ yourself, then peek at `impl.py` if you get stuck.
 - [ ] Day 12: pagerank
 - [ ] Day 13: svm
 - [ ] Day 14: gmm
+- [ ] Day 15: hmm
 
 ## How to use this file
 
