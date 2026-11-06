@@ -14,7 +14,7 @@ algorithm with clearly more votes jumps the queue.
 - [x] svm
 - [x] gmm
 - [x] hmm
-- [ ] attention
+- [x] attention
 - [ ] lora
 - [ ] rag-retriever
 - [ ] autoencoder
