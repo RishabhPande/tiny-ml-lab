@@ -48,6 +48,7 @@ python algorithms/kmeans/impl.py
 | 14 | [Gaussian Mixture Model](algorithms/gmm/) | Soft clustering by EM, and why overlapping blobs cannot be told apart |
 | 15 | [Hidden Markov Model](algorithms/hmm/) | Baum-Welch and Viterbi decoding, and why identical emissions hide the state |
 | 16 | [Attention](algorithms/attention/) | Scaled dot-product self-attention, and why identical keys collapse it to a mean |
+| 17 | [LoRA](algorithms/lora/) | Low-rank adapters on a frozen layer, and why a rank-1 update cannot fix a full-rank task |
 
 ## 💥 Where they break
 

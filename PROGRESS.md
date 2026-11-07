@@ -22,6 +22,7 @@ yourself, then peek at `impl.py` if you get stuck.
 - [ ] Day 14: gmm
 - [ ] Day 15: hmm
 - [ ] Day 16: attention
+- [ ] Day 17: lora
 
 ## How to use this file
 
