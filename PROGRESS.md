@@ -23,6 +23,7 @@ yourself, then peek at `impl.py` if you get stuck.
 - [ ] Day 15: hmm
 - [ ] Day 16: attention
 - [ ] Day 17: lora
+- [ ] Day 18: rag-retriever
 
 ## How to use this file
 

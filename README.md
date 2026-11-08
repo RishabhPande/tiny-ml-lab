@@ -49,6 +49,7 @@ python algorithms/kmeans/impl.py
 | 15 | [Hidden Markov Model](algorithms/hmm/) | Baum-Welch and Viterbi decoding, and why identical emissions hide the state |
 | 16 | [Attention](algorithms/attention/) | Scaled dot-product self-attention, and why identical keys collapse it to a mean |
 | 17 | [LoRA](algorithms/lora/) | Low-rank adapters on a frozen layer, and why a rank-1 update cannot fix a full-rank task |
+| 18 | [RAG Retriever](algorithms/rag-retriever/) | TF-IDF cosine retrieval, and why synonyms it never saw return nothing |
 
 ## 💥 Where they break
 
