@@ -17,7 +17,7 @@ algorithm with clearly more votes jumps the queue.
 - [x] attention
 - [x] lora
 - [x] rag-retriever
-- [ ] autoencoder
+- [x] autoencoder
 - [ ] q-learning
 - [ ] isolation-forest
 

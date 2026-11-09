@@ -50,6 +50,7 @@ python algorithms/kmeans/impl.py
 | 16 | [Attention](algorithms/attention/) | Scaled dot-product self-attention, and why identical keys collapse it to a mean |
 | 17 | [LoRA](algorithms/lora/) | Low-rank adapters on a frozen layer, and why a rank-1 update cannot fix a full-rank task |
 | 18 | [RAG Retriever](algorithms/rag-retriever/) | TF-IDF cosine retrieval, and why synonyms it never saw return nothing |
+| 19 | [Autoencoder](algorithms/autoencoder/) | A tiny MLP that compresses and rebuilds, and why a 1D bottleneck cannot hold a circle |
 
 ## 💥 Where they break
 
