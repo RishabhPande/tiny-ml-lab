@@ -72,3 +72,27 @@ def test_breaks():
     hits = retriever.query("stolen credit card fraud detection", k=3)
     assert hits[0][0] == 0
     assert hits[0][1] > 0.5
+
+
+def test_top_k_boundaries():
+    """Invalid limits must not become Python slice semantics or vanish on OOV queries."""
+    import pytest
+
+    retriever = TFIDFRetriever(make_corpus())
+    assert retriever.query("water", k=0) == []
+    assert retriever.query("water", k=np.int64(1)) == retriever.query("water", k=1)
+    assert len(retriever.query("water", k=100)) == 2
+    for text in ("water", "the and of", "unseenword"):
+        with pytest.raises(ValueError, match="nonnegative integer"):
+            retriever.query(text, k=-1)
+        for invalid in (True, False, np.bool_(True), 1.5, "2", None):
+            with pytest.raises(TypeError, match="nonnegative integer"):
+                retriever.query(text, k=invalid)
+
+
+def test_empty_corpus_and_empty_documents():
+    """No vocabulary is a normal empty result, not a NaN or phantom hit."""
+    for docs in ([], ["", "the and of"]):
+        retriever = TFIDFRetriever(docs)
+        assert retriever.query("water", k=3) == []
+        assert np.all(np.isfinite(retriever.matrix))
