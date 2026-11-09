@@ -45,7 +45,9 @@ class TFIDFRetriever:
 
     def query(self, text, k=3):
         """TODO: return the top-k (doc index, cosine score) pairs,
-        best first, only with positive scores. An empty list means
+        best first, only with positive scores. Validate k as a nonnegative
+        integer (not a boolean), including for empty/OOV queries; k=0
+        returns no results. An empty list otherwise means
         the query matched nothing in the corpus. Hint: cosine
         similarity here is a dot product, because the document
         rows and the query vector are already normalized."""
