@@ -17,6 +17,7 @@ why real RAG systems add embeddings or query expansion on top.
 Run: python algorithms/rag-retriever/impl.py
 """
 
+import operator
 import re
 
 import numpy as np
@@ -97,9 +98,18 @@ class TFIDFRetriever:
     def query(self, text, k=3):
         """Return the top-k (doc index, cosine score) pairs, best first.
 
-        Only documents with a positive score are returned, so an
-        empty list means the query matched nothing in the corpus.
+        Only documents with a positive score are returned. k must be a
+        nonnegative integer (not a boolean); k=0 returns no results.
+        Otherwise an empty list means no vocabulary match.
         """
+        if isinstance(k, (bool, np.bool_)):
+            raise TypeError("k must be a nonnegative integer")
+        try:
+            k = operator.index(k)
+        except TypeError as exc:
+            raise TypeError("k must be a nonnegative integer") from exc
+        if k < 0:
+            raise ValueError("k must be a nonnegative integer")
         q = self.vectorize(text)
         if not np.any(q):
             return []
