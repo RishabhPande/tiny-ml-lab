@@ -25,6 +25,7 @@ yourself, then peek at `impl.py` if you get stuck.
 - [ ] Day 17: lora
 - [ ] Day 18: rag-retriever
 - [ ] Day 19: autoencoder
+- [ ] Day 20: q-learning
 
 ## How to use this file
 

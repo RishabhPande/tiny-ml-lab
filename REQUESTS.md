@@ -18,7 +18,7 @@ algorithm with clearly more votes jumps the queue.
 - [x] lora
 - [x] rag-retriever
 - [x] autoencoder
-- [ ] q-learning
+- [x] q-learning
 - [ ] isolation-forest
 
 ## How voting works

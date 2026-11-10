@@ -51,6 +51,7 @@ python algorithms/kmeans/impl.py
 | 17 | [LoRA](algorithms/lora/) | Low-rank adapters on a frozen layer, and why a rank-1 update cannot fix a full-rank task |
 | 18 | [RAG Retriever](algorithms/rag-retriever/) | TF-IDF cosine retrieval, and why synonyms it never saw return nothing |
 | 19 | [Autoencoder](algorithms/autoencoder/) | A tiny MLP that compresses and rebuilds, and why a 1D bottleneck cannot hold a circle |
+| 20 | [Q-Learning](algorithms/q-learning/) | Tabular Q-learning on a gridworld, and why a myopic agent never finds a delayed reward |
 
 ## 💥 Where they break
 
