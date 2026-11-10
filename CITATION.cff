@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: "Tiny ML Lab"
+# date-released is a placeholder. Update it to the actual release date when the release is cut.
+date-released: 2026-11-10
+license: "MIT"
+authors:
+  - given-names: Rishabh
+    family-names: Pande
+    orcid: "https://orcid.org/0009-0004-1901-7109"
+repository-code: "https://github.com/RishabhPande/tiny-ml-lab"
+abstract: "A daily Tiny ML lab: classic machine learning algorithms implemented from scratch in pure Python, one day at a time, with tests."
