@@ -52,6 +52,7 @@ python algorithms/kmeans/impl.py
 | 18 | [RAG Retriever](algorithms/rag-retriever/) | TF-IDF cosine retrieval, and why synonyms it never saw return nothing |
 | 19 | [Autoencoder](algorithms/autoencoder/) | A tiny MLP that compresses and rebuilds, and why a 1D bottleneck cannot hold a circle |
 | 20 | [Q-Learning](algorithms/q-learning/) | Tabular Q-learning on a gridworld, and why a myopic agent never finds a delayed reward |
+| 21 | [Isolation Forest](algorithms/isolation-forest/) | Random splits that isolate outliers fast, and why a tight cluster of anomalies hides itself |
 
 ## 💥 Where they break
 

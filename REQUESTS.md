@@ -19,7 +19,7 @@ algorithm with clearly more votes jumps the queue.
 - [x] rag-retriever
 - [x] autoencoder
 - [x] q-learning
-- [ ] isolation-forest
+- [x] isolation-forest
 
 ## How voting works
 
