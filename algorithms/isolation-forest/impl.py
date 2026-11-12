@@ -88,7 +88,15 @@ class IsolationForest:
         low = float(x[:, feature].min())
         high = float(x[:, feature].max())
         if low == high:
-            return _Node(n)
+            # A constant column cannot split this node, but another
+            # column may still separate its points. Stop only when
+            # every feature is constant in the current node.
+            variable = np.flatnonzero(np.ptp(x, axis=0) > 0)
+            if len(variable) == 0:
+                return _Node(n)
+            feature = int(rng.choice(variable))
+            low = float(x[:, feature].min())
+            high = float(x[:, feature].max())
         split = float(rng.uniform(low, high))
         goes_left = x[:, feature] < split
         left = x[goes_left]
