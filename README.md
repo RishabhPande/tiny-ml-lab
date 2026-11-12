@@ -28,6 +28,33 @@ pytest
 python algorithms/kmeans/impl.py
 ```
 
+## Check your workbooks together
+
+```bash
+python scripts/check_workbooks.py                         # all days
+python scripts/check_workbooks.py perceptron kmeans       # selected folders
+python scripts/check_workbooks.py --json > workbook-status.json
+```
+
+The runner finds workbook folders automatically and runs each in a fresh Python
+process from its own directory. It reports `todo`, `error`, `timeout`,
+`unrecognized`, or `self-check-ok`. Unfilled workbooks print TODO feedback but
+normally exit zero; this runner checks their feedback instead of treating that
+zero as completion. Exit codes: 0 only when every selected self-check is OK,
+1 when work remains or a check fails, 2 for invalid arguments.
+
+**Self-check OK is not correctness grading.** It only means the workbook's
+existing checks ran without their TODO/error feedback. The algorithm tests use
+`impl.py`, not your workbook, so passing those tests does not grade your solution
+either. Review your implementation and compare behavior before checking off
+`PROGRESS.md`. This command never fills TODOs or edits your checklist.
+
+Use only trusted local workbooks: running them executes Python with your own
+permissions, not in a sandbox. The default 60-second timeout per workbook stops
+the direct process, not arbitrary child processes or network access. Change it
+with `--timeout SECONDS`. JSON includes only folder names and statuses, not
+workbook output or exception details. No extra dependencies are needed.
+
 ## 📅 The days
 
 | Day | Algorithm | One-liner |
