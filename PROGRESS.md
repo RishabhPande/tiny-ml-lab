@@ -27,6 +27,7 @@ yourself, then peek at `impl.py` if you get stuck.
 - [ ] Day 19: autoencoder
 - [ ] Day 20: q-learning
 - [ ] Day 21: isolation-forest
+- [ ] Day 22: perceptron
 
 ## How to use this file
 

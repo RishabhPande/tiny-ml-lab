@@ -20,6 +20,7 @@ algorithm with clearly more votes jumps the queue.
 - [x] autoencoder
 - [x] q-learning
 - [x] isolation-forest
+- [x] perceptron
 
 ## How voting works
 
