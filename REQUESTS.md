@@ -21,6 +21,7 @@ algorithm with clearly more votes jumps the queue.
 - [x] q-learning
 - [x] isolation-forest
 - [x] perceptron
+- [x] adaboost
 
 ## How voting works
 

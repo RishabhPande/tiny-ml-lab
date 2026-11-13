@@ -28,6 +28,7 @@ yourself, then peek at `impl.py` if you get stuck.
 - [ ] Day 20: q-learning
 - [ ] Day 21: isolation-forest
 - [ ] Day 22: perceptron
+- [ ] Day 23: adaboost
 
 ## How to use this file
 

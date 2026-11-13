@@ -81,6 +81,7 @@ workbook output or exception details. No extra dependencies are needed.
 | 20 | [Q-Learning](algorithms/q-learning/) | Tabular Q-learning on a gridworld, and why a myopic agent never finds a delayed reward |
 | 21 | [Isolation Forest](algorithms/isolation-forest/) | Random splits that isolate outliers fast, and why a tight cluster of anomalies hides itself |
 | 22 | [Perceptron](algorithms/perceptron/) | The original linear learner, and why it never settles on XOR |
+| 23 | [AdaBoost](algorithms/adaboost/) | Boosted stumps that correct each other, and why label noise turns the reweighting against it |
 
 ## 💥 Where they break
 
