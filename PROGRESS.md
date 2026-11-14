@@ -29,6 +29,7 @@ yourself, then peek at `impl.py` if you get stuck.
 - [ ] Day 21: isolation-forest
 - [ ] Day 22: perceptron
 - [ ] Day 23: adaboost
+- [ ] Day 24: ridge-regression
 
 ## How to use this file
 
