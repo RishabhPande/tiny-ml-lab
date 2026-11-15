@@ -23,6 +23,7 @@ algorithm with clearly more votes jumps the queue.
 - [x] perceptron
 - [x] adaboost
 - [x] ridge-regression
+- [x] lasso-regression
 
 ## How voting works
 

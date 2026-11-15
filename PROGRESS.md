@@ -30,6 +30,7 @@ yourself, then peek at `impl.py` if you get stuck.
 - [ ] Day 22: perceptron
 - [ ] Day 23: adaboost
 - [ ] Day 24: ridge-regression
+- [ ] Day 25: lasso-regression
 
 ## How to use this file
 
