@@ -84,6 +84,7 @@ workbook output or exception details. No extra dependencies are needed.
 | 23 | [AdaBoost](algorithms/adaboost/) | Boosted stumps that correct each other, and why label noise turns the reweighting against it |
 | 24 | [Ridge Regression](algorithms/ridge-regression/) | L2-penalized least squares that tames collinear features, and why too much penalty erases the signal |
 | 25 | [Lasso Regression](algorithms/lasso-regression/) | L1-penalized least squares that zeroes useless features, and why it hands a shared effect to one twin feature |
+| 26 | [Elastic Net](algorithms/elastic-net/) | L1 and L2 penalties mixed, and why a feature recorded in tiny units gets priced out and deleted |
 
 ## 💥 Where they break
 

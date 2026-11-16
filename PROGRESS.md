@@ -31,6 +31,7 @@ yourself, then peek at `impl.py` if you get stuck.
 - [ ] Day 23: adaboost
 - [ ] Day 24: ridge-regression
 - [ ] Day 25: lasso-regression
+- [ ] Day 26: elastic-net
 
 ## How to use this file
 

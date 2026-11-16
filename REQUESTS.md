@@ -24,6 +24,7 @@ algorithm with clearly more votes jumps the queue.
 - [x] adaboost
 - [x] ridge-regression
 - [x] lasso-regression
+- [x] elastic-net
 
 ## How voting works
 
