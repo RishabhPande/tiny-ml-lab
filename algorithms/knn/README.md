@@ -3,7 +3,10 @@
 ## Idea
 
 No training, just memory: to classify a new point, look at the k closest
-training points and take a majority vote. Ties go to the smallest label.
+training points and take a majority vote. Vote ties go to the smallest label.
+`n_neighbors` must be an integer from 1 through the number of training rows,
+including all rows. Invalid values raise `ValueError` at prediction time.
+Equal-distance points at the neighbor cutoff have no guaranteed selection order.
 
 ## Run
 
