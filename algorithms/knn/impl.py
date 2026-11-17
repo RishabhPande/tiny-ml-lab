@@ -22,9 +22,13 @@ class KNNClassifier:
 
     def predict(self, X):
         """Predict one label per row of X."""
+        k = self.n_neighbors
+        if (isinstance(k, (bool, np.bool_)) or not isinstance(k, (int, np.integer))
+                or not 1 <= k <= len(self.X_)):
+            raise ValueError("n_neighbors must be an integer between 1 and the training row count")
         X = np.asarray(X, dtype=float)
         dist = np.linalg.norm(X[:, None, :] - self.X_[None, :, :], axis=2)
-        neighbors = np.argpartition(dist, self.n_neighbors, axis=1)[
+        neighbors = np.argpartition(dist, k - 1, axis=1)[
             :, : self.n_neighbors
         ]
         out = []
