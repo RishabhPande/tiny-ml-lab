@@ -4,6 +4,7 @@ import os
 import sys
 
 import numpy as np
+import pytest
 
 import importlib.util
 
@@ -55,3 +56,46 @@ def test_breaks():
     noisy = KNNClassifier(n_neighbors=5).fit(X_train_n, y_train_n)
     noisy_acc = accuracy(y_test_n, noisy.predict(X_test_n))
     assert noisy_acc < clean_acc - 0.15
+
+
+# Boundary regressions: all training rows are a valid neighbor set.
+
+@pytest.mark.parametrize("labels,expected", [([7], 7), ([2, 1, 2], 2),
+                                            ([2, 1], 1), (["z", "a"], "a")])
+def test_all_training_rows_can_vote(labels, expected):
+    X = np.arange(len(labels), dtype=float).reshape(-1, 1)
+    model = KNNClassifier(n_neighbors=len(labels)).fit(X, labels)
+    assert model.predict([[0.0], [99.0]]).tolist() == [expected, expected]
+
+
+@pytest.mark.parametrize("k", [0, -1, 4, 1.5, "2", True, False,
+                              np.bool_(True), np.nan, np.inf])
+def test_invalid_neighbor_counts_have_clear_error(k):
+    model = KNNClassifier(n_neighbors=k).fit([[0.0], [1.0], [2.0]], [0, 1, 1])
+    with pytest.raises(ValueError, match="n_neighbors must be an integer between 1"):
+        model.predict([[0.5]])
+
+
+def test_numpy_integer_neighbor_count_is_valid():
+    model = KNNClassifier(n_neighbors=np.int64(3)).fit([[0.0], [1.0], [2.0]], [0, 1, 1])
+    assert model.predict([[0.5]]).tolist() == [1]
+
+
+def test_empty_training_set_has_no_valid_neighbor_count():
+    model = KNNClassifier(n_neighbors=1).fit(np.empty((0, 1)), [])
+    with pytest.raises(ValueError, match="n_neighbors must be an integer between 1"):
+        model.predict([[0.5]])
+
+
+@pytest.mark.parametrize("k", [1, 2, 3, 4, 5])
+def test_neighbors_match_full_sort_without_distance_ties(k):
+    X = np.array([[0.0], [2.0], [5.0], [9.0], [14.0]])
+    y = np.array(["b", "a", "b", "c", "a"])
+    queries = np.array([[0.3], [6.2], [19.7]])
+    expected = []
+    for query in queries:
+        nearest = np.argsort(np.linalg.norm(X - query, axis=1))[:k]
+        labels, counts = np.unique(y[nearest], return_counts=True)
+        expected.append(labels[np.argmax(counts)])
+    model = KNNClassifier(n_neighbors=k).fit(X, y)
+    assert model.predict(queries).tolist() == expected
