@@ -32,6 +32,7 @@ yourself, then peek at `impl.py` if you get stuck.
 - [ ] Day 24: ridge-regression
 - [ ] Day 25: lasso-regression
 - [ ] Day 26: elastic-net
+- [ ] Day 27: hierarchical-clustering
 
 ## How to use this file
 
