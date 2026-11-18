@@ -26,6 +26,7 @@ algorithm with clearly more votes jumps the queue.
 - [x] lasso-regression
 - [x] elastic-net
 - [x] hierarchical-clustering
+- [x] spectral-clustering
 
 ## How voting works
 

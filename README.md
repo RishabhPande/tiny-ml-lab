@@ -86,6 +86,7 @@ workbook output or exception details. No extra dependencies are needed.
 | 25 | [Lasso Regression](algorithms/lasso-regression/) | L1-penalized least squares that zeroes useless features, and why it hands a shared effect to one twin feature |
 | 26 | [Elastic Net](algorithms/elastic-net/) | L1 and L2 penalties mixed, and why a feature recorded in tiny units gets priced out and deleted |
 | 27 | [Hierarchical Clustering](algorithms/hierarchical-clustering/) | Agglomerative merging bottom up, and why a thin chain of points joins two far apart clusters |
+| 28 | [Spectral Clustering](algorithms/spectral-clustering/) | Eigenvectors of the graph Laplacian, and why a tiny sigma dissolves the graph it clusters |
 
 ## 💥 Where they break
 
