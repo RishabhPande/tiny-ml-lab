@@ -27,6 +27,7 @@ algorithm with clearly more votes jumps the queue.
 - [x] elastic-net
 - [x] hierarchical-clustering
 - [x] spectral-clustering
+- [x] tsne
 
 ## How voting works
 

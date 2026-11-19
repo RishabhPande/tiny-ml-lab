@@ -34,6 +34,7 @@ yourself, then peek at `impl.py` if you get stuck.
 - [ ] Day 26: elastic-net
 - [ ] Day 27: hierarchical-clustering
 - [ ] Day 28: spectral-clustering
+- [ ] Day 29: tsne
 
 ## How to use this file
 
