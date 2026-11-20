@@ -23,17 +23,22 @@ pytest algorithms/spectral-clustering/test_spectral-clustering.py
 ## Break it
 
 `test_breaks` keeps two plain blobs, 10 spreads apart, that
-come back exactly at sigma 0.5, then reruns with sigma 0.01.
-At that width a pair of points 0.1 apart already has kernel
-weight near zero, so almost no edge survives and the graph
-falls apart into near isolated points. The Laplacian
-eigenvectors stop describing the blobs, and accuracy drops
-under 0.75, close to a coin flip. The blobs did not move;
-sigma quietly decided what counts as connected, and with the
-graph gone the method has nothing left to cluster. Sigma too
-large fails the other way, blurring separate groups into one
-connected mass, which the demo's ring data shows at sigma 1.0
-if you try it.
+come back exactly at sigma 0.5, then builds their graph with
+sigma 0.0001. At that extreme width every off-diagonal Gaussian
+weight underflows to zero. The test checks that no edges
+survive, for both original and shuffled rows, and that every
+normalized-Laplacian eigenvalue equals 1.
+
+This is a degenerate eigenspace, not a promise of a specific
+bad accuracy. An eigensolver may return any basis for that
+space; row order and numerical details can accidentally give
+labels that agree with the blobs. The demo prints the observed
+accuracy but uses the erased graph to explain the failure.
+The blobs did not move; the bandwidth removed the relationships
+that spectral clustering needs.
+
+Sigma too large fails the other way, blurring separate groups
+into one connected mass. Try the demo's ring data at sigma 1.0.
 
 ## Workbook
 
