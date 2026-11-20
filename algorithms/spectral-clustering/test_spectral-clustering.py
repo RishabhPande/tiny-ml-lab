@@ -39,20 +39,27 @@ def test_works():
 
 
 def test_breaks():
-    """Two blobs 10 spreads apart come back exactly at sigma
-    0.5. Shrink sigma to 0.01 and the same code on the same
-    data falls to near chance: a pair of points 0.1 apart
-    already has kernel weight near zero, so almost no edge
-    survives, the graph is a pile of isolated points, and the
-    smallest eigenvectors carry no blob structure. Accuracy
-    drops under 0.75 while the data never changed."""
+    """An extreme bandwidth erases every edge, not just accuracy.
+
+    With no edges the normalized Laplacian is the identity. Every
+    eigenvalue is repeated, so its eigenvectors contain no grouping
+    information. A particular eigensolver can still happen to return
+    labels correlated with the input order; low accuracy is not a
+    portable test of this failure mode.
+    """
     X, y = make_blobs(seed=0)
     good = SpectralClustering(n_clusters=2, sigma=0.5).fit(X)
     assert best_accuracy(y, good.labels_, 2) == 1.0
 
-    bad = SpectralClustering(n_clusters=2, sigma=0.01).fit(X)
-    acc = best_accuracy(y, bad.labels_, 2)
-    assert acc < 0.75
+    # Check original and shuffled rows: neither graph retains an edge.
+    for order in (np.arange(len(X)), np.random.default_rng(7).permutation(len(X))):
+        W = _impl._affinity(X[order], sigma=0.0001)
+        assert np.count_nonzero(W) == 0
+        degree = W.sum(axis=1)
+        inv_sqrt = np.where(degree > 0.0,
+                            1.0 / np.sqrt(np.maximum(degree, 1e-300)), 0.0)
+        L = np.eye(len(X)) - inv_sqrt[:, None] * W * inv_sqrt[None, :]
+        np.testing.assert_array_equal(np.linalg.eigvalsh(L), np.ones(len(X)))
 
 
 def test_rejects_bad_input():
