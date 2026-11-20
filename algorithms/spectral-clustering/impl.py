@@ -179,14 +179,18 @@ if __name__ == "__main__":
     # The break case: same code, sane blobs, sigma far too small.
     X, y = make_blobs(seed=0)
     good = SpectralClustering(n_clusters=2).fit(X)
-    bad = SpectralClustering(n_clusters=2, sigma=0.01).fit(X)
+    bad_sigma = 0.0001
+    bad = SpectralClustering(n_clusters=2, sigma=bad_sigma).fit(X)
     print(f"blobs, sigma 0.5: accuracy "
           f"{_best_accuracy(y, good.labels_, 2):.3f}")
-    print(f"blobs, sigma 0.01: accuracy "
+    print(f"blobs, sigma {bad_sigma}: accuracy "
           f"{_best_accuracy(y, bad.labels_, 2):.3f}")
-    print("Sigma sets the reach of every edge. At sigma 0.01 a "
-          "pair 0.1 apart already has weight near zero, so the "
-          "graph falls apart into near isolated points, the "
-          "Laplacian eigenvectors stop describing the blobs, "
-          "and the clustering is close to a coin flip. The data "
-          "did not change; the graph did.")
+    surviving = np.count_nonzero(_affinity(X, bad_sigma))
+    print(f"blobs, sigma {bad_sigma}: surviving directed edges {surviving}")
+    print("At this bandwidth every off-diagonal kernel weight "
+          "underflows to zero. The graph has no edges and its "
+          "normalized Laplacian is the identity: all eigenvalues "
+          "are equal. The returned grouping depends on the chosen "
+          "eigenbasis and input order, not on blob structure. "
+          "Accuracy can look better than chance by accident; "
+          "the missing edges are the failure to inspect.")
