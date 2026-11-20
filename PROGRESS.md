@@ -35,6 +35,7 @@ yourself, then peek at `impl.py` if you get stuck.
 - [ ] Day 27: hierarchical-clustering
 - [ ] Day 28: spectral-clustering
 - [ ] Day 29: tsne
+- [ ] Day 30: lda
 
 ## How to use this file
 
