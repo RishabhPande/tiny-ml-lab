@@ -29,6 +29,7 @@ algorithm with clearly more votes jumps the queue.
 - [x] spectral-clustering
 - [x] tsne
 - [x] lda
+- [x] qda
 
 ## How voting works
 

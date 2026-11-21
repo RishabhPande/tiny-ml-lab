@@ -89,6 +89,7 @@ workbook output or exception details. No extra dependencies are needed.
 | 28 | [Spectral Clustering](algorithms/spectral-clustering/) | Eigenvectors of the graph Laplacian, and why a tiny sigma dissolves the graph it clusters |
 | 29 | [t-SNE](algorithms/tsne/) | A neighbor preserving map to 2D, and why the distances between clusters on the map mean nothing |
 | 30 | [Linear Discriminant Analysis](algorithms/lda/) | Projection that separates class means, and why classes with the same mean are invisible to it |
+| 31 | [Quadratic Discriminant Analysis](algorithms/qda/) | One Gaussian per class with its own covariance, and why a handful of points per class cannot pin that covariance down |
 
 ## 💥 Where they break
 

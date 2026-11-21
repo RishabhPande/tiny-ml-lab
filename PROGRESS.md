@@ -36,6 +36,7 @@ yourself, then peek at `impl.py` if you get stuck.
 - [ ] Day 28: spectral-clustering
 - [ ] Day 29: tsne
 - [ ] Day 30: lda
+- [ ] Day 31: qda
 
 ## How to use this file
 
