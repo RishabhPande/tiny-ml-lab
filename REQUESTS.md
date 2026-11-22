@@ -30,6 +30,7 @@ algorithm with clearly more votes jumps the queue.
 - [x] tsne
 - [x] lda
 - [x] qda
+- [x] ica
 
 ## How voting works
 
