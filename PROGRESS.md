@@ -38,6 +38,7 @@ yourself, then peek at `impl.py` if you get stuck.
 - [ ] Day 30: lda
 - [ ] Day 31: qda
 - [ ] Day 32: ica
+- [ ] Day 33: nmf
 
 ## How to use this file
 

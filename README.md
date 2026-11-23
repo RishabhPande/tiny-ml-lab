@@ -91,6 +91,7 @@ workbook output or exception details. No extra dependencies are needed.
 | 30 | [Linear Discriminant Analysis](algorithms/lda/) | Projection that separates class means, and why classes with the same mean are invisible to it |
 | 31 | [Quadratic Discriminant Analysis](algorithms/qda/) | One Gaussian per class with its own covariance, and why a handful of points per class cannot pin that covariance down |
 | 32 | [Independent Component Analysis](algorithms/ica/) | FastICA unmixing by non-Gaussianity, and why Gaussian sources cannot be unmixed at all |
+| 33 | [Non-Negative Matrix Factorization](algorithms/nmf/) | Multiplicative updates that split a non-negative matrix into parts, and why too few parts cannot rebuild a higher-rank matrix |
 
 ## 💥 Where they break
 
