@@ -32,6 +32,7 @@ algorithm with clearly more votes jumps the queue.
 - [x] qda
 - [x] ica
 - [x] nmf
+- [x] mean-shift
 
 ## How voting works
 
