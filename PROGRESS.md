@@ -40,6 +40,7 @@ yourself, then peek at `impl.py` if you get stuck.
 - [ ] Day 32: ica
 - [ ] Day 33: nmf
 - [ ] Day 34: mean-shift
+- [ ] Day 35: gaussian-process
 
 ## How to use this file
 
