@@ -94,6 +94,7 @@ workbook output or exception details. No extra dependencies are needed.
 | 33 | [Non-Negative Matrix Factorization](algorithms/nmf/) | Multiplicative updates that split a non-negative matrix into parts, and why too few parts cannot rebuild a higher-rank matrix |
 | 34 | [Mean Shift](algorithms/mean-shift/) | Walks uphill to density peaks, and why a window wider than the gap merges two clusters into one |
 | 35 | [Gaussian Process Regression](algorithms/gaussian-process/) | Kernel-weighted regression with error bars, and why a length scale wider than the data flattens the curve |
+| 36 | [Factor Analysis](algorithms/factor-analysis/) | A few hidden factors plus per-variable noise, and why one factor cannot stand in for two independent ones |
 
 ## 💥 Where they break
 

@@ -33,6 +33,8 @@ algorithm with clearly more votes jumps the queue.
 - [x] ica
 - [x] nmf
 - [x] mean-shift
+- [x] gaussian-process
+- [x] factor-analysis
 
 ## How voting works
 
