@@ -95,6 +95,7 @@ workbook output or exception details. No extra dependencies are needed.
 | 34 | [Mean Shift](algorithms/mean-shift/) | Walks uphill to density peaks, and why a window wider than the gap merges two clusters into one |
 | 35 | [Gaussian Process Regression](algorithms/gaussian-process/) | Kernel-weighted regression with error bars, and why a length scale wider than the data flattens the curve |
 | 36 | [Factor Analysis](algorithms/factor-analysis/) | A few hidden factors plus per-variable noise, and why one factor cannot stand in for two independent ones |
+| 37 | [Self-Organizing Map](algorithms/self-organizing-map/) | A grid of prototypes that unfolds over the data, and why one unit cannot stand in for three far apart clusters |
 
 ## 💥 Where they break
 

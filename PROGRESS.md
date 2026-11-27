@@ -42,6 +42,7 @@ yourself, then peek at `impl.py` if you get stuck.
 - [ ] Day 34: mean-shift
 - [ ] Day 35: gaussian-process
 - [ ] Day 36: factor-analysis
+- [ ] Day 37: self-organizing-map
 
 ## How to use this file
 
