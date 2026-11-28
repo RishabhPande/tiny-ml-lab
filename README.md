@@ -96,6 +96,7 @@ workbook output or exception details. No extra dependencies are needed.
 | 35 | [Gaussian Process Regression](algorithms/gaussian-process/) | Kernel-weighted regression with error bars, and why a length scale wider than the data flattens the curve |
 | 36 | [Factor Analysis](algorithms/factor-analysis/) | A few hidden factors plus per-variable noise, and why one factor cannot stand in for two independent ones |
 | 37 | [Self-Organizing Map](algorithms/self-organizing-map/) | A grid of prototypes that unfolds over the data, and why one unit cannot stand in for three far apart clusters |
+| 38 | [Learning Vector Quantization](algorithms/learning-vector-quantization/) | Labelled prototypes that move toward their own class and away from the rest, and why one prototype cannot guard a split class |
 
 ## 💥 Where they break
 

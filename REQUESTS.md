@@ -36,6 +36,7 @@ algorithm with clearly more votes jumps the queue.
 - [x] gaussian-process
 - [x] factor-analysis
 - [x] self-organizing-map
+- [x] learning-vector-quantization
 
 ## How voting works
 

@@ -43,6 +43,7 @@ yourself, then peek at `impl.py` if you get stuck.
 - [ ] Day 35: gaussian-process
 - [ ] Day 36: factor-analysis
 - [ ] Day 37: self-organizing-map
+- [ ] Day 38: learning-vector-quantization
 
 ## How to use this file
 
